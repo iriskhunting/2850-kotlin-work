@@ -3,7 +3,10 @@
 import kotlin.system.exitProcess
 
 fun display(text: String) {
-    println(text.uppercase())
+    when (text) {
+        null -> println("?")
+        else -> println(text.uppercase())
+    }
 }
 
 fun main(args: Array<String>) {

@@ -22,6 +22,7 @@ fun isValidTriangle(triangle: Triangle): Boolean {
 
 fun triangleArea(triangle: Triangle): Double {
     
+    // Needs to be a valid triangle to calc area
     require(isValidTriangle(triangle)) {"not a valid triangle"}
     
     val a = triangle.first
